@@ -1,3 +1,122 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;  
+@tailwind utilities;
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+  color: rgb(255 255 255);
+  background-color: rgb(0 0 0);
+  user-select: none;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 1rem /* 16px */;
+  margin-bottom: 1rem /* 16px */;
+  margin-top: 1rem /* 16px */;
+  margin-bottom: 1rem /* 16px */;
+  @media (min-width: 640px) {
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+  }
+}
+
+.lg-link {
+  text-decoration-line: underline;
+  color: rgb(191 219 254);
+}
+
+.lg-link:visited {
+  color: rgb(216 180 254);
+}
+
+.container{
+    flex-grow: 1;
+}
+
+.button-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: max-content;
+  min-height: 15vh;
+  display: grid;
+  place-items: center;
+}
+
+.button{
+    border-radius: 0.25rem/* 4px */;
+    background-color: rgb(22 163 74);
+    padding-left: 1.5rem/* 24px */;
+    padding-right: 1.5rem/* 24px */;
+    padding-top: 0.5rem/* 8px */;
+    padding-bottom: 0.5rem/* 8px */;
+    display: none;
+    @media (min-width: 640px) {
+            display: block;
+            font-size: 1.125rem/* 18px */;
+            line-height: 1.75rem/* 28px */;
+    }
+}
+
+.button:hover {
+    background-color: rgb(34 197 94);
+}
+
+.button:active {
+    background-color: rgb(21 128 61);
+}
+
+.footer {
+    padding: 0.5rem/* 8px */;
+    background-color: rgb(14 14 14);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer:hover {
+    background-color: rgb(23 23 27);
+}
+.footer-link{
+    margin-bottom: 0.5rem/* 8px */;
+    margin-right: 1rem/* 16px */;
+    @media (min-width: 640px) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.footer-link:hover {
+    text-decoration-line: underline;
+}
+.footer-link:visited {
+    color: rgb(216 180 254);
+}
+
+.footer-server-link{
+    margin-bottom: 0.5rem/* 8px */;
+    margin-right: 1rem/* 16px */;
+    display: none;
+    @media (min-width: 640px) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: block;
+    }
+}
+.footer-server-link:hover {
+    text-decoration-line: underline;
+}
+.footer-server-link:visited {
+    color: rgb(216 180 254);
+}
+.copyright{
+    margin-left: auto;
+    width: max-content;
+}
