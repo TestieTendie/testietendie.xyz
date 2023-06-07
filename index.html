@@ -7,38 +7,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
   <title>Testie Tendie's shitty HTML only website</title>
+  <meta name="description" content="Testie Tendie's shitty HTML only website" />
 </head>
 
 <body>
-  <div class="flex flex-col min-h-screen text-sm text-white bg-black select-none">
-    <nav class="mx-auto text-center my-4 sm:text-2xl">
-      Welcome to my shitty HTML only website<br/>(Hey, at least I'm not using a <span><a href="https://en.wikipedia.org/wiki/Serif" target="_blank" rel="noopener noreferrer" class="underline text-blue-200 visited:text-purple-300">serif</a></span> font on a <span><a href="https://shitty.testietendie.xyz" class="underline text-blue-200 visited:text-purple-300">white background</a></span>)
+  <div class="body">
+    <nav class="nav">
+      Welcome to my shitty HTML only website<br />(Hey, at least I'm not using a <span>
+        <a href="https://en.wikipedia.org/wiki/Serif" target="_blank" rel="noopener noreferrer"
+          class="lg-link">serif</a></span> font on a <span><a href="https://shitty.testietendie.xyz"
+          class="lg-link">white background</a></span>)
     </nav>
-    <div class="my-auto w-max min-h-[15vh] mx-auto grid place-items-center ">
-        <a href="steam://connect/l4d2.testietendie.xyz:7016"
-        class="rounded bg-green-600 hover:bg-green-500 active:bg-green-700 px-6 py-2 hidden sm:block sm:text-lg">
-        Connect to L4D2 Server
-      </a>
-    </div>
     <div class="flex-grow">
+      <div class="button-container">
+        <a href="steam://connect/l4d2.testietendie.xyz:7016" class="button">
+          Connect to L4D2 Server
+        </a>
+      </div>
     </div>
-    <footer class="p-2 bg-gray-950 hover:bg-slate-900 flex flex-wrap">
-    <a href="https://github.com/TestieTendie" class="hover:underline visited:text-purple-300 mr-4 mb-2 md:my-0">
+    <footer class="footer">
+      <a href="https://github.com/TestieTendie" class="footer-link">
         Github
       </a>
-      <a href="https://forums.alliedmods.net/member.php?u=344706" class="hover:underline visited:text-purple-300 mr-4 mb-2 md:my-0">
+      <a href="https://forums.alliedmods.net/member.php?u=344706" class="footer-link">
         AlliedModders
       </a>
-      <a href="https://steamcommunity.com/id/zemoneh/myworkshopfiles/?appid=550" class="hover:underline visited:text-purple-300 mb-2 md:my-0 mr-4">
+      <a href="https://steamcommunity.com/id/zemoneh/myworkshopfiles/?appid=550" class="footer-link">
         L4D2 Workshop
       </a>
-      <a href="steam://connect/l4d2.testietendie.xyz:7016" class="hover:underline visited:text-purple-300 mb-2 md:my-0 hidden sm:block mr-4">
-        L4D2 Server
-      </a>
-      <a href="mailto:webmastertendie@gmail.com" class="hover:underline visited:text-purple-300 mb-2 md:my-0 mr-4">
+      <a href="mailto:webmastertendie@gmail.com" class="footer-link">
         Contact
       </a>
-      <h3 class="ml-auto w-max">
+      <a href="steam://connect/l4d2.testietendie.xyz:7016" class="footer-server-link">
+        L4D2 Server
+      </a>
+      <h3 class="copyright">
         &copy; 2023 Testie Tendie. MIT License.
       </h3>
     </footer>
