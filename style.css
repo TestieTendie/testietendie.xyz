@@ -1,3 +1,109 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;  
+@tailwind utilities;
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+  font-family: serif;
+  user-select: none;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 1rem /* 16px */;
+  margin-bottom: 1rem /* 16px */;
+  margin-top: 1rem /* 16px */;
+  margin-bottom: 1rem /* 16px */;
+  @media (min-width: 640px) {
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+  }
+}
+
+.lg-link {
+  text-decoration-line: underline;
+  color: rgb(29 78 216);
+}
+
+.lg-link:visited {
+  color: rgb(126 34 206);
+}
+
+.container{
+    flex-grow: 1;
+}
+
+.button-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: max-content;
+  min-height: 15vh;
+  display: grid;
+  place-items: center;
+}
+
+.button{
+    border-radius: 0.25rem/* 4px */;
+    padding-left: 1.5rem/* 24px */;
+    padding-right: 1.5rem/* 24px */;
+    padding-top: 0.5rem/* 8px */;
+    padding-bottom: 0.5rem/* 8px */;
+    display: none;
+    color: rgb(29 78 216);
+    text-decoration-line: underline;
+    @media (min-width: 640px) {
+            display: block;
+            font-size: 1.125rem/* 18px */;
+            line-height: 1.75rem/* 28px */;
+    }
+}
+
+.footer {
+    padding: 0.5rem/* 8px */;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-link{
+    margin-bottom: 0.5rem/* 8px */;
+    margin-right: 1rem/* 16px */;
+    text-decoration-line: underline;
+    color: rgb(29 78 216);
+    @media (min-width: 640px) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.footer-link:visited {
+    color: rgb(126 34 206);
+}
+
+.footer-server-link{
+    margin-bottom: 0.5rem/* 8px */;
+    margin-right: 1rem/* 16px */;
+    color: rgb(29 78 216);
+    display: none;
+    text-decoration-line: underline;
+    @media (min-width: 640px) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: block;
+    }
+}
+
+.footer-server-link:visited {
+    color: rgb(126 34 206);
+}
+.copyright{
+    margin-left: auto;
+    width: max-content;
+}
